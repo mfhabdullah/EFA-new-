@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English for All</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">English for All</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#teachers">Teachers</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#admission">Admission</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">Dark Mode</button>
+      <a href="#admission" class="cta-button">Book Admission</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div>
+      <h1>Unlock Your English Potential</h1>
+      <p>Learn English To Conquer The World</p>
+      <a href="#courses" class="cta-button">Explore Courses</a>
+    </div>
+  </section>
+
+  <section id="teachers" class="teachers">
+    <h2>Our Teachers</h2>
+    <div class="teacher-grid">
+      <div class="teacher-card">
+        <img src="./images/teacher1.jpeg" alt="Teacher">
+        <h3>Mfh Abdullah</h3>
+        <p>Speaking & Listening & Phonetics</p>
+      </div>
+      <div class="teacher-grid">
+        <div class="teacher-card">
+          <img src="./images/alamin.jpeg" alt="Teacher">
+          <h3>Md Alamin</h3>
+          <p>Speaking & Reading & Writing & Grammar </p>
+        </div>
+      <!-- Add more teacher cards here -->
+    </div>
+  </section>
+
+  <section id="courses" class="courses">
+    <h2>Our Courses</h2>
+    <div class="course-grid">
+      <div class="course-card">
+        <h3>Speaking</h3>
+        <h5>Enhance your spoken English with engaging conversations, real-life scenarios, and expert guidance. At English for All, we help you build confidence, improve pronunciation, and develop fluency through interactive sessions. Speak naturally and express yourself with ease!
+        </h5>
+            
+      </div>
+
+      <div class="course-grid">
+        <div class="course-card">
+          <h3>Listening</h3>
+          <h5>Good communication starts with good listening! Our courses train you to understand different accents, tones, and speech patterns. With audio lessons, conversations, and practical exercises, you’ll sharpen your listening skills and respond confidently in any situation.
+        </h5>
+        </div>
+        <div class="course-grid">
+            <div class="course-card">
+              <h3>Reading</h3>
+              <h5>Develop strong reading skills with structured lessons designed to improve comprehension, vocabulary, and speed. From stories to articles, we help you read fluently while understanding context, tone, and meaning.</h5>
+            </div>
+            <div class="course-grid">
+                <div class="course-card">
+                  <h3>Writing</h3>
+                  <h5>Express your thoughts clearly and effectively with our writing lessons. Whether it’s emails, essays, or creative writing, we guide you in grammar, sentence structure, and style to make your writing impactful and professional.
+                </h5>
+                </div>
+                <div class="course-grid">
+                    <div class="course-card">
+                      <h3>Phonetics</h3>
+                      <h5>Master English pronunciation with phonetics! Learn the correct sounds, stress patterns, and intonation to speak clearly and be understood easily. Our practical approach makes learning phonetics simple and effective.
+                    </h5>
+                    </div>
+                    <div class="course-grid">
+                        <div class="course-card">
+                          <h3>Grammar</h3>
+                          <h5>Strong grammar is the foundation of good English. Our expert-led lessons cover tenses, sentence structures, and common mistakes, helping you speak and write with accuracy and confidence.
+                        </h5>
+                        </div>
+      <!-- Add more course cards here -->
+    </div>
+  </section>
+
+  <section id="admission" class="admission">
+    <h2>Admission Form</h2>
+    <div class="admission-form">
+      <form name="admission" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial-card">
+        <p>"English for All changed my life! I’m now fluent in English."</p>
+        <h4>Mfh Abdullah</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"The teachers are amazing and very supportive."</p>
+        <h4>Md Alamin</h4>
+      </div>
+      <!-- Add more testimonials here -->
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: mfhabdullah21@gmail.com</p>
+    <p>Phone: +880 1977387632</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2010 English for All. All rights reserved.</p>
+    <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
