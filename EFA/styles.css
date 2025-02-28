@@ -1,0 +1,259 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dark-mode {
+    background-color: #333;
+    color: #f9f9f9;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    background: #bbdefb;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .dark-mode header {
+    background: rgba(51, 51, 51, 0.9);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .dark-mode nav ul li a {
+    color: #f9f9f9;
+  }
+  
+  .cta-button {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .cta-button:hover {
+    background: #0056b3;
+  }
+  
+  .hero {
+    background: url('./images/bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+  }
+  
+  .teachers {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .teacher-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .teacher-card {
+    background: #bbdefb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .dark-mode .teacher-card {
+    background: #444;
+    color: #f9f9f9;
+  }
+  
+  .teacher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .teacher-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .teacher-card h3 {
+    margin: 10px 0 5px;
+  }
+  
+  .teacher-card p {
+    color: #777;
+  }
+  
+  .courses {
+    padding: 50px 20px;
+    background: #f1f1f1;
+    text-align: center;
+  }
+  
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .course-card {
+    background: #bbdefb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .dark-mode .course-card {
+    background: #444;
+    color: #f9f9f9;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-card h3 {
+    margin: 10px 0;
+  }
+  
+  .admission {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .admission-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark-mode .admission-form {
+    background: #444;
+    color: #f9f9f9;
+  }
+  
+  .admission-form input, .admission-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .admission-form button {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .admission-form button:hover {
+    background: #0056b3;
+  }
+  
+  .testimonials {
+    padding: 50px 20px;
+    background: #f1f1f1;
+    text-align: center;
+  }
+  
+  .testimonial-slider {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-card {
+    background: #bbdefb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none; /* Hide all testimonials initially */
+  }
+  
+  .dark-mode .testimonial-card {
+    background: #444;
+    color: #f9f9f9;
+  }
+  
+  .contact {
+    padding: 50px 20px;
+    background: #f1f1f1;
+    text-align: center;
+  }
+  
+  .contact p {
+    font-size: 1.2rem;
+  }
+  
+  footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
